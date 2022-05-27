@@ -14,7 +14,7 @@ const { Text, Link } = Typography;
 
 
 function TransactionHistory(ledger) {
-    const [value, setValue] = React.useState(1);
+    const [value, setValue] = React.useState();
     const onClick = e => {
         console.log('Test completed', e.target.value);
         setValue(e.target.value);
@@ -25,12 +25,12 @@ function TransactionHistory(ledger) {
     //     console.log({test:test})
     // }, ledger)
     return (
-   <div className="div-layout">
+        <div className="div-layout">
             <div>
                 <Title>Transaction History</Title><>{
                     console.log("Test 2", ledger)
                 }</>
-                <Button type="primary"  onClick={(e) => { }}>
+                <Button type="primary" onClick={(e) => { }}>
                 </Button>
                 <ul>
                     <li>
